@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="345dp"
+            android:layout_height="190dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="237dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="164dp"
+            android:background="@color/md_theme_light_primary"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tags"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:background="@color/md_theme_light_onSurfaceVariant"
+            android:text="TextView"
+            android:textColor="@color/md_theme_light_onPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="345dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:text="Ingredients:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tags" />
+
+        <ListView
+            android:id="@+id/ingredientList"
+            android:layout_width="344dp"
+            android:layout_height="300dp"
+            android:nestedScrollingEnabled="true"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:maxHeight="300dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients" />
+
+        <TextView
+            android:id="@+id/recipeTitle"
+            android:layout_width="345dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="15dp"
+            android:text="Recipe:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientList" />
+
+        <TextView
+            android:id="@+id/recipe"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Recipe...."
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipeTitle" />
+
+        <TextView
+            android:id="@+id/yt"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Youtube"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_save"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ProgressBar
+            android:id="@+id/loadingPb"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

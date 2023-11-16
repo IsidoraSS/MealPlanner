@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/categories"
+        android:title="categories"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_home_24"></item>
+    <item
+        android:id="@+id/filter"
+        android:title="filter"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_filter_alt_24"></item>
+    <item
+        android:id="@+id/meal"
+        android:title="meal"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_fastfood_24"></item>
+    <item
+        android:id="@+id/plan"
+        android:title="misc"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_calendar_month_24"></item>
+    <item
+        android:id="@+id/misc"
+        android:title="misc"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_pie_chart_24"></item>
+</menu>

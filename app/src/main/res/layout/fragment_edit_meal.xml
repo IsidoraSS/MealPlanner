@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="345dp"
+            android:layout_height="190dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="237dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="164dp"
+            android:background="@color/md_theme_light_primary"
+            android:text="EditText"
+            android:textAlignment="center"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datePickerButton"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/datePickerButton"
+            style="?android:spinnerStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="JAN 01 2020"
+            android:textColor="@color/md_theme_light_onSurface"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="56dp"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MealPlanner</string>
+    <string name="categories">Categories</string>
+    <string name="filter">Filter</string>
+    <string name="meal">Meal</string>
+    <string name="plan">Plan</string>
+    <string name="misc">Stats</string>
+    <string name="search">Search</string>
+    <string name="add">Add</string>
+    <string name="save">SAVE</string>
+    <string name="snack">Snack</string>
+    <string name="dinner">Dinner</string>
+    <string name="lunch">Lunch</string>
+    <string name="breakfast">Breakf</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wen">WEN</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="sun">SUN</string>
+
+    <string-array name="filterDD">
+        <item>Category</item>
+        <item>Area</item>
+        <item>Ingredient</item>
+    </string-array>
+
+    <string-array name="mealTypeDD">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snack</item>
+    </string-array>
+
+    <string-array name="countDD">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="typeDD">
+        <item>Categories</item>
+        <item>Areas</item>
+        <item>Meals</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RWItem">
+
+    <TextView
+        android:id="@android:id/text1"
+        style="?android:attr/dropDownItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="TEST"
+        android:paddingStart="40dp"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
